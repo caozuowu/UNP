@@ -11,6 +11,8 @@
 		E98F54ED253ECC430000022E /* libunp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E98F54EC253ECC430000022E /* libunp.a */; };
 		E98F5505253EE0620000022E /* daytimetcpcli1.c in Sources */ = {isa = PBXBuildFile; fileRef = E98F5504253EE0620000022E /* daytimetcpcli1.c */; };
 		E98F5506253EE1290000022E /* libunp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E98F54EC253ECC430000022E /* libunp.a */; };
+		E99C62462540024D00C452CA /* daytimetcpsrv.c in Sources */ = {isa = PBXBuildFile; fileRef = E99C62452540024D00C452CA /* daytimetcpsrv.c */; };
+		E99C62472540025800C452CA /* libunp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E98F54EC253ECC430000022E /* libunp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +34,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		E99C623C2540023900C452CA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +51,8 @@
 		E98F54EC253ECC430000022E /* libunp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libunp.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98F54FD253EE04C0000022E /* daytimetcpcli1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = daytimetcpcli1; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98F5504253EE0620000022E /* daytimetcpcli1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = daytimetcpcli1.c; sourceTree = "<group>"; };
+		E99C623E2540023900C452CA /* daytimetcpsrv */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = daytimetcpsrv; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99C62452540024D00C452CA /* daytimetcpsrv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = daytimetcpsrv.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E98F5506253EE1290000022E /* libunp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99C623B2540023900C452CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99C62472540025800C452CA /* libunp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +97,7 @@
 			children = (
 				E98F5447253ECA850000022E /* daytimetcpcli */,
 				E98F54FD253EE04C0000022E /* daytimetcpcli1 */,
+				E99C623E2540023900C452CA /* daytimetcpsrv */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +107,7 @@
 			children = (
 				E98F5504253EE0620000022E /* daytimetcpcli1.c */,
 				E98F544A253ECA850000022E /* daytimetcpcli.c */,
+				E99C62452540024D00C452CA /* daytimetcpsrv.c */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -134,6 +157,23 @@
 			productReference = E98F54FD253EE04C0000022E /* daytimetcpcli1 */;
 			productType = "com.apple.product-type.tool";
 		};
+		E99C623D2540023900C452CA /* daytimetcpsrv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99C62442540023900C452CA /* Build configuration list for PBXNativeTarget "daytimetcpsrv" */;
+			buildPhases = (
+				E99C623A2540023900C452CA /* Sources */,
+				E99C623B2540023900C452CA /* Frameworks */,
+				E99C623C2540023900C452CA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = daytimetcpsrv;
+			productName = daytimetcpsrv;
+			productReference = E99C623E2540023900C452CA /* daytimetcpsrv */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -147,6 +187,9 @@
 						CreatedOnToolsVersion = 11.2.1;
 					};
 					E98F54FC253EE04C0000022E = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					E99C623D2540023900C452CA = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
@@ -166,6 +209,7 @@
 			targets = (
 				E98F5446253ECA850000022E /* daytimetcpcli */,
 				E98F54FC253EE04C0000022E /* daytimetcpcli1 */,
+				E99C623D2540023900C452CA /* daytimetcpsrv */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +228,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E98F5505253EE0620000022E /* daytimetcpcli1.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99C623A2540023900C452CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99C62462540024D00C452CA /* daytimetcpsrv.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +397,26 @@
 			};
 			name = Release;
 		};
+		E99C62422540023900C452CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JC2EQSWR8C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E99C62432540023900C452CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JC2EQSWR8C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -371,6 +443,15 @@
 			buildConfigurations = (
 				E98F5502253EE04C0000022E /* Debug */,
 				E98F5503253EE04C0000022E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99C62442540023900C452CA /* Build configuration list for PBXNativeTarget "daytimetcpsrv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99C62422540023900C452CA /* Debug */,
+				E99C62432540023900C452CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
